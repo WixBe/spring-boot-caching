@@ -1,4 +1,7 @@
 package com.ust.springbootcaching.repository;
 
-public interface BookRepository {
+import com.ust.springbootcaching.domain.Book;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface BookRepository extends JpaRepository<Book, Long> {
 }
